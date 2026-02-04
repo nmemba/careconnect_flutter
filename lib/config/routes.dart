@@ -68,16 +68,17 @@ class AppRouter {
               path: '/medications',
               builder: (context, state) => const MedicationsScreen(),
             ),
+
+            GoRoute(
+              path: '/medications/add',
+              builder: (context, state) => const AddMedicationScreen(),
+            ),
             GoRoute(
               path: '/medications/:id',
               builder: (context, state) {
                 final id = state.pathParameters['id']!;
                 return MedicationDetailScreen(medicationId: id);
               },
-            ),
-            GoRoute(
-              path: '/medications/add',
-              builder: (context, state) => const AddMedicationScreen(),
             ),
             GoRoute(
               path: '/medications/:id/refill',
