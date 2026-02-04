@@ -385,3 +385,6 @@ flutter pub get
 **Total**: 50+ comprehensive tests covering critical functionality
 
 ---
+## AI USAGE
+AI was used in transcribing most of the FIgma code although several screens were not perfectly transcribed which required additional manual fixing of code and route fixes. 
+Application was ran on an android mobile device which passed all google testing prior to installation. 
