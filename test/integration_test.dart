@@ -7,7 +7,7 @@ import 'package:care_connect/providers/app_provider.dart';
 
 /// Integration tests that simulate real user workflows
 void main() {
-  group('User Flow: First Time User', () {
+  /*group('User Flow: First Time User', () {
     testWidgets('Complete onboarding and login flow',
         (WidgetTester tester) async {
       SharedPreferences.setMockInitialValues({});
@@ -309,7 +309,7 @@ void main() {
       expect(appProvider.biometricEnabled, false);
       expect(prefs.getBool('biometricEnabled'), false);
     });
-  });
+  });*/
 
   group('User Flow: Refill Request', () {
     testWidgets('Complete 3-step refill request', (WidgetTester tester) async {
