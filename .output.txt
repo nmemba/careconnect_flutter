@@ -1,0 +1,276 @@
+00:13 +18: ...ers/pcwork/IdeaProjects/CareConnect1/test/calendar_test.dart     test/calendar_test.dart:78:33: Error: Too few positional arguments: 1 required,
+0 given.
+      appProvider.addAppointment(
+                                ^
+00:13 +18 -1: loading C:/Users/pcwork/IdeaProjects/CareConnect1/test/calendar_test.dart [E]
+  Failed to load "C:/Users/pcwork/IdeaProjects/CareConnect1/test/calendar_test.dart":
+  Compilation failed for testPath=C:/Users/pcwork/IdeaProjects/CareConnect1/test/calendar_test.dart: test/calendar_test.dart:78:33: Error: Too few positional arguments: 1 required, 0 given.
+        appProvider.addAppointment(
+                                  ^
+  .
+To run this test again: C:\Users\pcwork\Documents\FlutterSDK\flutter\bin\cache\dart-sdk\bin\dart.exe test C:/Users/pcwork/IdeaProjects/CareConnect1/test/calendar_test.dart -p vm --plain-name "loading C:/Users/pcwork/IdeaProjects/CareConnect1/test/calendar_test.dart"
+00:34 +75 -1: C:/Users/pcwork/IdeaProjects/CareConnect1/test/refill_request_test.dart: RefillRequestScreen Tests Stepper flow: Continue -> Continue -> Submit returns to /medications
+Warning: A call to tap() with finder "Found 1 widget with type "ElevatedButton" descending from widget with type "Stepper" (ignoring all but last): [
+  ElevatedButton-[<'refill_stepper_button'>](style: ButtonStyle#7bb3c(textStyle: WidgetStatePropertyAll(null), minimumSize: WidgetStatePropertyAll(Size(Infinity, 56.0)), mouseCursor: WidgetStateMapper<MouseCursor?>({WidgetState.disabled: null, WidgetState.any: null})), dependencies: [IconTheme, InheritedCupertinoTheme, MediaQuery, _InheritedTheme, _LocalizationsScope-[GlobalKey#eaeb9], _ScrollableScope], state: _ButtonStyleState#afe6f),
+]" derived an Offset (Offset(618.0, 899.0)) that would not hit test on the specified widget.
+Maybe the widget is actually off-screen, or another widget is obscuring it, or the widget cannot receive pointer events.
+The finder corresponds to this RenderBox: RenderSemanticsAnnotations#56500 relayoutBoundary=up28 NEEDS-PAINT
+The hit test result at that offset is: HitTestResult(RenderPointerListener#8295d@Offset(618.0, 843.0), RenderSemanticsGestureHandler#938a3@Offset(618.0, 843.0), RenderPointerListener#e5b1c@Offset(618.0, 843.0), _RenderScrollSemantics#d4f8f@Offset(618.0, 843.0), RenderClipRect#390b6@Offset(618.0, 843.0), RenderFlex#d145d@Offset(618.0, 843.0), RenderPadding#9f822@Offset(618.0, 843.0), RenderCustomMultiChildLayoutBox#26205@Offset(618.0, 899.0), _RenderInkFeatures#75794@Offset(618.0, 899.0), RenderPhysicalModel#a86c6@Offset(618.0, 899.0), RenderSemanticsAnnotations#2ea96@Offset(618.0, 899.0), RenderRepaintBoundary#313c2@Offset(618.0, 899.0), RenderIgnorePointer#e870b@Offset(618.0, 899.0), RenderAnimatedOpacity#378d0@Offset(618.0, 899.0), RenderAnimatedOpacity#23f02@Offset(618.0, 899.0), _RenderColoredBox#8987d@Offset(618.0, 899.0), RenderAnimatedOpacity#f149c@Offset(618.0, 899.0), RenderIgnorePointer#db195@Offset(618.0, 899.0), RenderAnimatedOpacity#81495@Offset(618.0, 899.0), RenderRepaintBoundary#cb86a@Offset(618.0, 899.0), RenderSemanticsAnnotations#fcd3b@Offset(618.0, 899.0), RenderOffstage#29527@Offset(618.0, 899.0), RenderSemanticsAnnotations#686f0@Offset(618.0, 899.0), _RenderTheater#40ede@Offset(618.0, 899.0), RenderAbsorbPointer#b22c3@Offset(618.0, 899.0), RenderPointerListener#32c3e@Offset(618.0, 899.0), RenderCustomPaint#98000@Offset(618.0, 899.0), RenderSemanticsAnnotations#da34c@Offset(618.0, 899.0), RenderSemanticsAnnotations#0bd74@Offset(618.0, 899.0), RenderTapRegionSurface#632e4@Offset(618.0, 899.0), RenderSemanticsAnnotations#c1a03@Offset(618.0, 899.0), RenderSemanticsAnnotations#f8bd0@Offset(618.0, 899.0), RenderSemanticsAnnotations#f1f89@Offset(618.0, 899.0), HitTestEntry<HitTestTarget>#c054c(_ReusableRenderView#f14fd), HitTestEntry<HitTestTarget>#3c3da(<AutomatedTestWidgetsFlutterBinding>))
+#0      WidgetController._getElementPoint (package:flutter_test/src/controller.dart:2081:25)
+#1      WidgetController.getCenter (package:flutter_test/src/controller.dart:1865:12)
+#2      WidgetController.tap (package:flutter_test/src/controller.dart:1045:7)
+#3      main.<anonymous closure>.tapPrimary (file:///C:/Users/pcwork/IdeaProjects/CareConnect1/test/refill_request_test.dart:59:22)
+<asynchronous suspension>
+#4      main.<anonymous closure>.<anonymous closure> (file:///C:/Users/pcwork/IdeaProjects/CareConnect1/test/refill_request_test.dart:114:7)
+<asynchronous suspension>
+#5      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#6      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1059:5)
+<asynchronous suspension>
+#7      StackZoneSpecification._registerCallback.<anonymous closure> (package:stack_trace/src/stack_zone_specification.dart:114:42)
+<asynchronous suspension>
+To silence this warning, pass "warnIfMissed: false" to "tap()".
+To make this warning fatal, set WidgetController.hitTestWarningShouldBeFatal to true.
+Warning: A call to tap() with finder "Found 1 widget with type "ElevatedButton" descending from widget with type "Stepper" (ignoring all but last): [
+  ElevatedButton-[<'refill_stepper_button'>](style: ButtonStyle#7bb3c(textStyle: WidgetStatePropertyAll(null), minimumSize: WidgetStatePropertyAll(Size(Infinity, 56.0)), mouseCursor: WidgetStateMapper<MouseCursor?>({WidgetState.disabled: null, WidgetState.any: null})), dependencies: [IconTheme, InheritedCupertinoTheme, MediaQuery, _InheritedTheme, _LocalizationsScope-[GlobalKey#eaeb9], _ScrollableScope], state: _ButtonStyleState#afe6f),
+]" derived an Offset (Offset(618.0, 899.0)) that would not hit test on the specified widget.
+Maybe the widget is actually off-screen, or another widget is obscuring it, or the widget cannot receive pointer events.
+The finder corresponds to this RenderBox: RenderSemanticsAnnotations#56500 relayoutBoundary=up28 NEEDS-PAINT
+The hit test result at that offset is: HitTestResult(RenderPointerListener#8295d@Offset(618.0, 843.0), RenderSemanticsGestureHandler#938a3@Offset(618.0, 843.0), RenderPointerListener#e5b1c@Offset(618.0, 843.0), _RenderScrollSemantics#d4f8f@Offset(618.0, 843.0), RenderClipRect#390b6@Offset(618.0, 843.0), RenderFlex#d145d@Offset(618.0, 843.0), RenderPadding#9f822@Offset(618.0, 843.0), RenderCustomMultiChildLayoutBox#26205@Offset(618.0, 899.0), _RenderInkFeatures#75794@Offset(618.0, 899.0), RenderPhysicalModel#a86c6@Offset(618.0, 899.0), RenderSemanticsAnnotations#2ea96@Offset(618.0, 899.0), RenderRepaintBoundary#313c2@Offset(618.0, 899.0), RenderIgnorePointer#e870b@Offset(618.0, 899.0), RenderAnimatedOpacity#378d0@Offset(618.0, 899.0), RenderAnimatedOpacity#23f02@Offset(618.0, 899.0), _RenderColoredBox#8987d@Offset(618.0, 899.0), RenderAnimatedOpacity#f149c@Offset(618.0, 899.0), RenderIgnorePointer#db195@Offset(618.0, 899.0), RenderAnimatedOpacity#81495@Offset(618.0, 899.0), RenderRepaintBoundary#cb86a@Offset(618.0, 899.0), RenderSemanticsAnnotations#fcd3b@Offset(618.0, 899.0), RenderOffstage#29527@Offset(618.0, 899.0), RenderSemanticsAnnotations#686f0@Offset(618.0, 899.0), _RenderTheater#40ede@Offset(618.0, 899.0), RenderAbsorbPointer#b22c3@Offset(618.0, 899.0), RenderPointerListener#32c3e@Offset(618.0, 899.0), RenderCustomPaint#98000@Offset(618.0, 899.0), RenderSemanticsAnnotations#da34c@Offset(618.0, 899.0), RenderSemanticsAnnotations#0bd74@Offset(618.0, 899.0), RenderTapRegionSurface#632e4@Offset(618.0, 899.0), RenderSemanticsAnnotations#c1a03@Offset(618.0, 899.0), RenderSemanticsAnnotations#f8bd0@Offset(618.0, 899.0), RenderSemanticsAnnotations#f1f89@Offset(618.0, 899.0), HitTestEntry<HitTestTarget>#c0b27(_ReusableRenderView#f14fd), HitTestEntry<HitTestTarget>#ef506(<AutomatedTestWidgetsFlutterBinding>))
+#0      WidgetController._getElementPoint (package:flutter_test/src/controller.dart:2081:25)
+#1      WidgetController.getCenter (package:flutter_test/src/controller.dart:1865:12)
+#2      WidgetController.tap (package:flutter_test/src/controller.dart:1045:7)
+#3      main.<anonymous closure>.tapPrimary (file:///C:/Users/pcwork/IdeaProjects/CareConnect1/test/refill_request_test.dart:59:22)
+<asynchronous suspension>
+#4      main.<anonymous closure>.<anonymous closure> (file:///C:/Users/pcwork/IdeaProjects/CareConnect1/test/refill_request_test.dart:119:7)
+<asynchronous suspension>
+#5      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#6      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1059:5)
+<asynchronous suspension>
+#7      StackZoneSpecification._registerCallback.<anonymous closure> (package:stack_trace/src/stack_zone_specification.dart:114:42)
+<asynchronous suspension>
+To silence this warning, pass "warnIfMissed: false" to "tap()".
+To make this warning fatal, set WidgetController.hitTestWarningShouldBeFatal to true.
+Warning: A call to tap() with finder "Found 1 widget with type "ElevatedButton" descending from widget with type "Stepper" (ignoring all but last): [
+  ElevatedButton-[<'refill_stepper_button'>](style: ButtonStyle#7bb3c(textStyle: WidgetStatePropertyAll(null), minimumSize: WidgetStatePropertyAll(Size(Infinity, 56.0)), mouseCursor: WidgetStateMapper<MouseCursor?>({WidgetState.disabled: null, WidgetState.any: null})), dependencies: [IconTheme, InheritedCupertinoTheme, MediaQuery, _InheritedTheme, _LocalizationsScope-[GlobalKey#eaeb9], _ScrollableScope], state: _ButtonStyleState#afe6f),
+]" derived an Offset (Offset(618.0, 899.0)) that would not hit test on the specified widget.
+Maybe the widget is actually off-screen, or another widget is obscuring it, or the widget cannot receive pointer events.
+The finder corresponds to this RenderBox: RenderSemanticsAnnotations#56500 relayoutBoundary=up28 NEEDS-PAINT
+The hit test result at that offset is: HitTestResult(RenderPointerListener#8295d@Offset(618.0, 843.0), RenderSemanticsGestureHandler#938a3@Offset(618.0, 843.0), RenderPointerListener#e5b1c@Offset(618.0, 843.0), _RenderScrollSemantics#d4f8f@Offset(618.0, 843.0), RenderClipRect#390b6@Offset(618.0, 843.0), RenderFlex#d145d@Offset(618.0, 843.0), RenderPadding#9f822@Offset(618.0, 843.0), RenderCustomMultiChildLayoutBox#26205@Offset(618.0, 899.0), _RenderInkFeatures#75794@Offset(618.0, 899.0), RenderPhysicalModel#a86c6@Offset(618.0, 899.0), RenderSemanticsAnnotations#2ea96@Offset(618.0, 899.0), RenderRepaintBoundary#313c2@Offset(618.0, 899.0), RenderIgnorePointer#e870b@Offset(618.0, 899.0), RenderAnimatedOpacity#378d0@Offset(618.0, 899.0), RenderAnimatedOpacity#23f02@Offset(618.0, 899.0), _RenderColoredBox#8987d@Offset(618.0, 899.0), RenderAnimatedOpacity#f149c@Offset(618.0, 899.0), RenderIgnorePointer#db195@Offset(618.0, 899.0), RenderAnimatedOpacity#81495@Offset(618.0, 899.0), RenderRepaintBoundary#cb86a@Offset(618.0, 899.0), RenderSemanticsAnnotations#fcd3b@Offset(618.0, 899.0), RenderOffstage#29527@Offset(618.0, 899.0), RenderSemanticsAnnotations#686f0@Offset(618.0, 899.0), _RenderTheater#40ede@Offset(618.0, 899.0), RenderAbsorbPointer#b22c3@Offset(618.0, 899.0), RenderPointerListener#32c3e@Offset(618.0, 899.0), RenderCustomPaint#98000@Offset(618.0, 899.0), RenderSemanticsAnnotations#da34c@Offset(618.0, 899.0), RenderSemanticsAnnotations#0bd74@Offset(618.0, 899.0), RenderTapRegionSurface#632e4@Offset(618.0, 899.0), RenderSemanticsAnnotations#c1a03@Offset(618.0, 899.0), RenderSemanticsAnnotations#f8bd0@Offset(618.0, 899.0), RenderSemanticsAnnotations#f1f89@Offset(618.0, 899.0), HitTestEntry<HitTestTarget>#ce1ab(_ReusableRenderView#f14fd), HitTestEntry<HitTestTarget>#a2472(<AutomatedTestWidgetsFlutterBinding>))
+#0      WidgetController._getElementPoint (package:flutter_test/src/controller.dart:2081:25)
+#1      WidgetController.getCenter (package:flutter_test/src/controller.dart:1865:12)
+#2      WidgetController.tap (package:flutter_test/src/controller.dart:1045:7)
+#3      main.<anonymous closure>.tapPrimary (file:///C:/Users/pcwork/IdeaProjects/CareConnect1/test/refill_request_test.dart:59:22)
+<asynchronous suspension>
+#4      main.<anonymous closure>.<anonymous closure> (file:///C:/Users/pcwork/IdeaProjects/CareConnect1/test/refill_request_test.dart:126:7)
+<asynchronous suspension>
+#5      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#6      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1059:5)
+<asynchronous suspension>
+#7      StackZoneSpecification._registerCallback.<anonymous closure> (package:stack_trace/src/stack_zone_specification.dart:114:42)
+<asynchronous suspension>
+To silence this warning, pass "warnIfMissed: false" to "tap()".
+To make this warning fatal, set WidgetController.hitTestWarningShouldBeFatal to true.
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following TestFailure was thrown running a test:
+Expected: exactly one matching candidate
+  Actual: _TextWidgetFinder:<Found 0 widgets with text "Medications": []>
+   Which: means none were found but one was expected
+When the exception was thrown, this was the stack:
+#4      main.<anonymous closure>.<anonymous closure> (file:///C:/Users/pcwork/IdeaProjects/CareConnect1/test/refill_request_test.dart:129:7)
+<asynchronous suspension>
+#5      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#6      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1059:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+This was caught by the test expectation on the following line:
+  file:///C:/Users/pcwork/IdeaProjects/CareConnect1/test/refill_request_test.dart line 129
+The test description was:
+  Stepper flow: Continue -> Continue -> Submit returns to /medications
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:34 +75 -2: C:/Users/pcwork/IdeaProjects/CareConnect1/test/refill_request_test.dart: RefillRequestScreen Tests Stepper flow: Continue -> Continue -> Submit returns to /medications [E]
+  Test failed. See exception logs above.
+  The test description was: Stepper flow: Continue -> Continue -> Submit returns to /medications
+
+To run this test again: C:\Users\pcwork\Documents\FlutterSDK\flutter\bin\cache\dart-sdk\bin\dart.exe test C:/Users/pcwork/IdeaProjects/CareConnect1/test/refill_request_test.dart -p vm --plain-name "RefillRequestScreen Tests Stepper flow: Continue -> Continue -> Submit returns to /medications"
+00:35 +76 -2: C:/Users/pcwork/IdeaProjects/CareConnect1/test/refill_request_test.dart: RefillRequestScreen Tests Back button moves from step 1 to step 0
+Warning: A call to tap() with finder "Found 1 widget with type "ElevatedButton" descending from widget with type "Stepper" (ignoring all but last): [
+  ElevatedButton-[<'refill_stepper_button'>](style: ButtonStyle#7bb3c(textStyle: WidgetStatePropertyAll(null), minimumSize: WidgetStatePropertyAll(Size(Infinity, 56.0)), mouseCursor: WidgetStateMapper<MouseCursor?>({WidgetState.disabled: null, WidgetState.any: null})), dependencies: [IconTheme, InheritedCupertinoTheme, MediaQuery, _InheritedTheme, _LocalizationsScope-[GlobalKey#a08a3], _ScrollableScope], state: _ButtonStyleState#acfca),
+]" derived an Offset (Offset(618.0, 899.0)) that would not hit test on the specified widget.
+Maybe the widget is actually off-screen, or another widget is obscuring it, or the widget cannot receive pointer events.
+The finder corresponds to this RenderBox: RenderSemanticsAnnotations#d5bdb relayoutBoundary=up28 NEEDS-PAINT
+The hit test result at that offset is: HitTestResult(RenderPointerListener#7ff3a@Offset(618.0, 843.0), RenderSemanticsGestureHandler#26919@Offset(618.0, 843.0), RenderPointerListener#8159b@Offset(618.0, 843.0), _RenderScrollSemantics#bf639@Offset(618.0, 843.0), RenderClipRect#d8ed3@Offset(618.0, 843.0), RenderFlex#7c31a@Offset(618.0, 843.0), RenderPadding#cd487@Offset(618.0, 843.0), RenderCustomMultiChildLayoutBox#89078@Offset(618.0, 899.0), _RenderInkFeatures#4a215@Offset(618.0, 899.0), RenderPhysicalModel#ad39a@Offset(618.0, 899.0), RenderSemanticsAnnotations#5d30b@Offset(618.0, 899.0), RenderRepaintBoundary#c0a7b@Offset(618.0, 899.0), RenderIgnorePointer#76509@Offset(618.0, 899.0), RenderAnimatedOpacity#c2cab@Offset(618.0, 899.0), RenderAnimatedOpacity#f645b@Offset(618.0, 899.0), _RenderColoredBox#9e68a@Offset(618.0, 899.0), RenderAnimatedOpacity#67600@Offset(618.0, 899.0), RenderIgnorePointer#f328a@Offset(618.0, 899.0), RenderAnimatedOpacity#5df5c@Offset(618.0, 899.0), RenderRepaintBoundary#b786b@Offset(618.0, 899.0), RenderSemanticsAnnotations#7dcd5@Offset(618.0, 899.0), RenderOffstage#e82ff@Offset(618.0, 899.0), RenderSemanticsAnnotations#5a149@Offset(618.0, 899.0), _RenderTheater#fab4a@Offset(618.0, 899.0), RenderAbsorbPointer#86b8f@Offset(618.0, 899.0), RenderPointerListener#9135b@Offset(618.0, 899.0), RenderCustomPaint#e9e20@Offset(618.0, 899.0), RenderSemanticsAnnotations#9267a@Offset(618.0, 899.0), RenderSemanticsAnnotations#a8565@Offset(618.0, 899.0), RenderTapRegionSurface#89290@Offset(618.0, 899.0), RenderSemanticsAnnotations#88db0@Offset(618.0, 899.0), RenderSemanticsAnnotations#e1c71@Offset(618.0, 899.0), RenderSemanticsAnnotations#87941@Offset(618.0, 899.0), HitTestEntry<HitTestTarget>#45cdb(_ReusableRenderView#f14fd), HitTestEntry<HitTestTarget>#70507(<AutomatedTestWidgetsFlutterBinding>))
+#0      WidgetController._getElementPoint (package:flutter_test/src/controller.dart:2081:25)
+#1      WidgetController.getCenter (package:flutter_test/src/controller.dart:1865:12)
+#2      WidgetController.tap (package:flutter_test/src/controller.dart:1045:7)
+#3      main.<anonymous closure>.tapPrimary (file:///C:/Users/pcwork/IdeaProjects/CareConnect1/test/refill_request_test.dart:59:22)
+<asynchronous suspension>
+#4      main.<anonymous closure>.<anonymous closure> (file:///C:/Users/pcwork/IdeaProjects/CareConnect1/test/refill_request_test.dart:138:7)
+<asynchronous suspension>
+#5      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#6      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1059:5)
+<asynchronous suspension>
+#7      StackZoneSpecification._registerCallback.<anonymous closure> (package:stack_trace/src/stack_zone_specification.dart:114:42)
+<asynchronous suspension>
+To silence this warning, pass "warnIfMissed: false" to "tap()".
+To make this warning fatal, set WidgetController.hitTestWarningShouldBeFatal to true.
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following TestFailure was thrown running a test:
+Expected: exactly one matching candidate
+  Actual: _AncestorWidgetFinder:<Found 0 widgets with type "OutlinedButton" that are ancestors of
+widgets with text "Back": []>
+   Which: means none were found but one was expected
+When the exception was thrown, this was the stack:
+#4      main.<anonymous closure>.<anonymous closure> (file:///C:/Users/pcwork/IdeaProjects/CareConnect1/test/refill_request_test.dart:142:7)
+<asynchronous suspension>
+#5      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#6      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1059:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+This was caught by the test expectation on the following line:
+  file:///C:/Users/pcwork/IdeaProjects/CareConnect1/test/refill_request_test.dart line 142
+The test description was:
+  Back button moves from step 1 to step 0
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:35 +76 -3: C:/Users/pcwork/IdeaProjects/CareConnect1/test/refill_request_test.dart: RefillRequestScreen Tests Back button moves from step 1 to step 0 [E]
+  Test failed. See exception logs above.
+  The test description was: Back button moves from step 1 to step 0
+
+To run this test again: C:\Users\pcwork\Documents\FlutterSDK\flutter\bin\cache\dart-sdk\bin\dart.exe test C:/Users/pcwork/IdeaProjects/CareConnect1/test/refill_request_test.dart -p vm --plain-name "RefillRequestScreen Tests Back button moves from step 1 to step 0"
+00:35 +77 -3: C:/Users/pcwork/IdeaProjects/CareConnect1/test/refill_request_test.dart: RefillRequestScreen Tests Pickup method radio selection works
+Warning: A call to tap() with finder "Found 1 widget with type "ElevatedButton" descending from widget with type "Stepper" (ignoring all but last): [
+  ElevatedButton-[<'refill_stepper_button'>](style: ButtonStyle#7bb3c(textStyle: WidgetStatePropertyAll(null), minimumSize: WidgetStatePropertyAll(Size(Infinity, 56.0)), mouseCursor: WidgetStateMapper<MouseCursor?>({WidgetState.disabled: null, WidgetState.any: null})), dependencies: [IconTheme, InheritedCupertinoTheme, MediaQuery, _InheritedTheme, _LocalizationsScope-[GlobalKey#7cae1], _ScrollableScope], state: _ButtonStyleState#c64e0),
+]" derived an Offset (Offset(618.0, 899.0)) that would not hit test on the specified widget.
+Maybe the widget is actually off-screen, or another widget is obscuring it, or the widget cannot receive pointer events.
+The finder corresponds to this RenderBox: RenderSemanticsAnnotations#6a982 relayoutBoundary=up28 NEEDS-PAINT
+The hit test result at that offset is: HitTestResult(RenderPointerListener#92fb7@Offset(618.0, 843.0), RenderSemanticsGestureHandler#c6f5b@Offset(618.0, 843.0), RenderPointerListener#7d8a2@Offset(618.0, 843.0), _RenderScrollSemantics#777cc@Offset(618.0, 843.0), RenderClipRect#d5b70@Offset(618.0, 843.0), RenderFlex#4b8b9@Offset(618.0, 843.0), RenderPadding#cb073@Offset(618.0, 843.0), RenderCustomMultiChildLayoutBox#bdd52@Offset(618.0, 899.0), _RenderInkFeatures#95487@Offset(618.0, 899.0), RenderPhysicalModel#8c90d@Offset(618.0, 899.0), RenderSemanticsAnnotations#57a4a@Offset(618.0, 899.0), RenderRepaintBoundary#50ee1@Offset(618.0, 899.0), RenderIgnorePointer#aa495@Offset(618.0, 899.0), RenderAnimatedOpacity#d973b@Offset(618.0, 899.0), RenderAnimatedOpacity#7fad1@Offset(618.0, 899.0), _RenderColoredBox#f3658@Offset(618.0, 899.0), RenderAnimatedOpacity#86c6c@Offset(618.0, 899.0), RenderIgnorePointer#d1c79@Offset(618.0, 899.0), RenderAnimatedOpacity#4d32f@Offset(618.0, 899.0), RenderRepaintBoundary#d0550@Offset(618.0, 899.0), RenderSemanticsAnnotations#21b0c@Offset(618.0, 899.0), RenderOffstage#5724d@Offset(618.0, 899.0), RenderSemanticsAnnotations#aed3d@Offset(618.0, 899.0), _RenderTheater#223e2@Offset(618.0, 899.0), RenderAbsorbPointer#6eaa6@Offset(618.0, 899.0), RenderPointerListener#c601a@Offset(618.0, 899.0), RenderCustomPaint#a91e2@Offset(618.0, 899.0), RenderSemanticsAnnotations#374f3@Offset(618.0, 899.0), RenderSemanticsAnnotations#f8766@Offset(618.0, 899.0), RenderTapRegionSurface#c9126@Offset(618.0, 899.0), RenderSemanticsAnnotations#6c5ee@Offset(618.0, 899.0), RenderSemanticsAnnotations#c338f@Offset(618.0, 899.0), RenderSemanticsAnnotations#ef86a@Offset(618.0, 899.0), HitTestEntry<HitTestTarget>#87cab(_ReusableRenderView#f14fd), HitTestEntry<HitTestTarget>#4c686(<AutomatedTestWidgetsFlutterBinding>))
+#0      WidgetController._getElementPoint (package:flutter_test/src/controller.dart:2081:25)
+#1      WidgetController.getCenter (package:flutter_test/src/controller.dart:1865:12)
+#2      WidgetController.tap (package:flutter_test/src/controller.dart:1045:7)
+#3      main.<anonymous closure>.tapPrimary (file:///C:/Users/pcwork/IdeaProjects/CareConnect1/test/refill_request_test.dart:59:22)
+<asynchronous suspension>
+#4      main.<anonymous closure>.<anonymous closure> (file:///C:/Users/pcwork/IdeaProjects/CareConnect1/test/refill_request_test.dart:156:7)
+<asynchronous suspension>
+#5      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#6      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1059:5)
+<asynchronous suspension>
+#7      StackZoneSpecification._registerCallback.<anonymous closure> (package:stack_trace/src/stack_zone_specification.dart:114:42)
+<asynchronous suspension>
+To silence this warning, pass "warnIfMissed: false" to "tap()".
+To make this warning fatal, set WidgetController.hitTestWarningShouldBeFatal to true.
+Warning: A call to tap() with finder "Found 1 widget with type "RadioListTile<String>" that are ancestors of widget with text "Delivery": [
+  RadioListTile<String>(dependencies: [InheritedCupertinoTheme, _InheritedTheme, _LocalizationsScope-[GlobalKey#7cae1]], state: _RadioListTileState<String>#4a2ca),
+]" derived an Offset (Offset(618.0, 526.0)) that would not hit test on the specified widget.
+Maybe the widget is actually off-screen, or another widget is obscuring it, or the widget cannot receive pointer events.
+The finder corresponds to this RenderBox: RenderMergeSemantics#28fd1 relayoutBoundary=up28 NEEDS-PAINT
+The hit test result at that offset is: HitTestResult(RenderPointerListener#92fb7@Offset(618.0, 470.0), RenderSemanticsGestureHandler#c6f5b@Offset(618.0, 470.0), RenderPointerListener#7d8a2@Offset(618.0, 470.0), _RenderScrollSemantics#777cc@Offset(618.0, 470.0), RenderClipRect#d5b70@Offset(618.0, 470.0), RenderFlex#4b8b9@Offset(618.0, 470.0), RenderPadding#cb073@Offset(618.0, 470.0), RenderCustomMultiChildLayoutBox#bdd52@Offset(618.0, 526.0), _RenderInkFeatures#95487@Offset(618.0, 526.0), RenderPhysicalModel#8c90d@Offset(618.0, 526.0), RenderSemanticsAnnotations#57a4a@Offset(618.0, 526.0), RenderRepaintBoundary#50ee1@Offset(618.0, 526.0), RenderIgnorePointer#aa495@Offset(618.0, 526.0), RenderAnimatedOpacity#d973b@Offset(618.0, 526.0), RenderAnimatedOpacity#7fad1@Offset(618.0, 526.0), _RenderColoredBox#f3658@Offset(618.0, 526.0), RenderAnimatedOpacity#86c6c@Offset(618.0, 526.0), RenderIgnorePointer#d1c79@Offset(618.0, 526.0), RenderAnimatedOpacity#4d32f@Offset(618.0, 526.0), RenderRepaintBoundary#d0550@Offset(618.0, 526.0), RenderSemanticsAnnotations#21b0c@Offset(618.0, 526.0), RenderOffstage#5724d@Offset(618.0, 526.0), RenderSemanticsAnnotations#aed3d@Offset(618.0, 526.0), _RenderTheater#223e2@Offset(618.0, 526.0), RenderAbsorbPointer#6eaa6@Offset(618.0, 526.0), RenderPointerListener#c601a@Offset(618.0, 526.0), RenderCustomPaint#a91e2@Offset(618.0, 526.0), RenderSemanticsAnnotations#374f3@Offset(618.0, 526.0), RenderSemanticsAnnotations#f8766@Offset(618.0, 526.0), RenderTapRegionSurface#c9126@Offset(618.0, 526.0), RenderSemanticsAnnotations#6c5ee@Offset(618.0, 526.0), RenderSemanticsAnnotations#c338f@Offset(618.0, 526.0), RenderSemanticsAnnotations#ef86a@Offset(618.0, 526.0), HitTestEntry<HitTestTarget>#40a08(_ReusableRenderView#f14fd), HitTestEntry<HitTestTarget>#d1c6c(<AutomatedTestWidgetsFlutterBinding>))
+#0      WidgetController._getElementPoint (package:flutter_test/src/controller.dart:2081:25)
+#1      WidgetController.getCenter (package:flutter_test/src/controller.dart:1865:12)
+#2      WidgetController.tap (package:flutter_test/src/controller.dart:1045:7)
+#3      main.<anonymous closure>.<anonymous closure> (file:///C:/Users/pcwork/IdeaProjects/CareConnect1/test/refill_request_test.dart:162:20)
+<asynchronous suspension>
+#4      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#5      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1059:5)
+<asynchronous suspension>
+#6      StackZoneSpecification._registerCallback.<anonymous closure> (package:stack_trace/src/stack_zone_specification.dart:114:42)
+<asynchronous suspension>
+To silence this warning, pass "warnIfMissed: false" to "tap()".
+To make this warning fatal, set WidgetController.hitTestWarningShouldBeFatal to true.
+Warning: A call to tap() with finder "Found 1 widget with type "ElevatedButton" descending from widget with type "Stepper" (ignoring all but last): [
+  ElevatedButton-[<'refill_stepper_button'>](style: ButtonStyle#7bb3c(textStyle: WidgetStatePropertyAll(null), minimumSize: WidgetStatePropertyAll(Size(Infinity, 56.0)), mouseCursor: WidgetStateMapper<MouseCursor?>({WidgetState.disabled: null, WidgetState.any: null})), dependencies: [IconTheme, InheritedCupertinoTheme, MediaQuery, _InheritedTheme, _LocalizationsScope-[GlobalKey#7cae1], _ScrollableScope], state: _ButtonStyleState#c64e0),
+]" derived an Offset (Offset(618.0, 899.0)) that would not hit test on the specified widget.
+Maybe the widget is actually off-screen, or another widget is obscuring it, or the widget cannot receive pointer events.
+The finder corresponds to this RenderBox: RenderSemanticsAnnotations#6a982 relayoutBoundary=up28 NEEDS-PAINT
+The hit test result at that offset is: HitTestResult(RenderPointerListener#92fb7@Offset(618.0, 843.0), RenderSemanticsGestureHandler#c6f5b@Offset(618.0, 843.0), RenderPointerListener#7d8a2@Offset(618.0, 843.0), _RenderScrollSemantics#777cc@Offset(618.0, 843.0), RenderClipRect#d5b70@Offset(618.0, 843.0), RenderFlex#4b8b9@Offset(618.0, 843.0), RenderPadding#cb073@Offset(618.0, 843.0), RenderCustomMultiChildLayoutBox#bdd52@Offset(618.0, 899.0), _RenderInkFeatures#95487@Offset(618.0, 899.0), RenderPhysicalModel#8c90d@Offset(618.0, 899.0), RenderSemanticsAnnotations#57a4a@Offset(618.0, 899.0), RenderRepaintBoundary#50ee1@Offset(618.0, 899.0), RenderIgnorePointer#aa495@Offset(618.0, 899.0), RenderAnimatedOpacity#d973b@Offset(618.0, 899.0), RenderAnimatedOpacity#7fad1@Offset(618.0, 899.0), _RenderColoredBox#f3658@Offset(618.0, 899.0), RenderAnimatedOpacity#86c6c@Offset(618.0, 899.0), RenderIgnorePointer#d1c79@Offset(618.0, 899.0), RenderAnimatedOpacity#4d32f@Offset(618.0, 899.0), RenderRepaintBoundary#d0550@Offset(618.0, 899.0), RenderSemanticsAnnotations#21b0c@Offset(618.0, 899.0), RenderOffstage#5724d@Offset(618.0, 899.0), RenderSemanticsAnnotations#aed3d@Offset(618.0, 899.0), _RenderTheater#223e2@Offset(618.0, 899.0), RenderAbsorbPointer#6eaa6@Offset(618.0, 899.0), RenderPointerListener#c601a@Offset(618.0, 899.0), RenderCustomPaint#a91e2@Offset(618.0, 899.0), RenderSemanticsAnnotations#374f3@Offset(618.0, 899.0), RenderSemanticsAnnotations#f8766@Offset(618.0, 899.0), RenderTapRegionSurface#c9126@Offset(618.0, 899.0), RenderSemanticsAnnotations#6c5ee@Offset(618.0, 899.0), RenderSemanticsAnnotations#c338f@Offset(618.0, 899.0), RenderSemanticsAnnotations#ef86a@Offset(618.0, 899.0), HitTestEntry<HitTestTarget>#c5338(_ReusableRenderView#f14fd), HitTestEntry<HitTestTarget>#8dfca(<AutomatedTestWidgetsFlutterBinding>))
+#0      WidgetController._getElementPoint (package:flutter_test/src/controller.dart:2081:25)
+#1      WidgetController.getCenter (package:flutter_test/src/controller.dart:1865:12)
+#2      WidgetController.tap (package:flutter_test/src/controller.dart:1045:7)
+#3      main.<anonymous closure>.tapPrimary (file:///C:/Users/pcwork/IdeaProjects/CareConnect1/test/refill_request_test.dart:59:22)
+<asynchronous suspension>
+#4      main.<anonymous closure>.<anonymous closure> (file:///C:/Users/pcwork/IdeaProjects/CareConnect1/test/refill_request_test.dart:165:7)
+<asynchronous suspension>
+#5      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#6      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1059:5)
+<asynchronous suspension>
+#7      StackZoneSpecification._registerCallback.<anonymous closure> (package:stack_trace/src/stack_zone_specification.dart:114:42)
+<asynchronous suspension>
+To silence this warning, pass "warnIfMissed: false" to "tap()".
+To make this warning fatal, set WidgetController.hitTestWarningShouldBeFatal to true.
+00:36 +80 -3: C:/Users/pcwork/IdeaProjects/CareConnect1/test/refill_request_test.dart: RefillRequestScreen Tests Notes field is editable
+Warning: A call to tap() with finder "Found 1 widget with type "ElevatedButton" descending from widget with type "Stepper" (ignoring all but last): [
+  ElevatedButton-[<'refill_stepper_button'>](style: ButtonStyle#7bb3c(textStyle: WidgetStatePropertyAll(null), minimumSize: WidgetStatePropertyAll(Size(Infinity, 56.0)), mouseCursor: WidgetStateMapper<MouseCursor?>({WidgetState.disabled: null, WidgetState.any: null})), dependencies: [IconTheme, InheritedCupertinoTheme, MediaQuery, _InheritedTheme, _LocalizationsScope-[GlobalKey#9b3dd], _ScrollableScope], state: _ButtonStyleState#66a3e),
+]" derived an Offset (Offset(618.0, 899.0)) that would not hit test on the specified widget.
+Maybe the widget is actually off-screen, or another widget is obscuring it, or the widget cannot receive pointer events.
+The finder corresponds to this RenderBox: RenderSemanticsAnnotations#ac078 relayoutBoundary=up28 NEEDS-PAINT
+The hit test result at that offset is: HitTestResult(RenderPointerListener#76c01@Offset(618.0, 843.0), RenderSemanticsGestureHandler#26240@Offset(618.0, 843.0), RenderPointerListener#9134b@Offset(618.0, 843.0), _RenderScrollSemantics#addfc@Offset(618.0, 843.0), RenderClipRect#5730a@Offset(618.0, 843.0), RenderFlex#62a88@Offset(618.0, 843.0), RenderPadding#6905a@Offset(618.0, 843.0), RenderCustomMultiChildLayoutBox#b41c7@Offset(618.0, 899.0), _RenderInkFeatures#67390@Offset(618.0, 899.0), RenderPhysicalModel#595dc@Offset(618.0, 899.0), RenderSemanticsAnnotations#57bed@Offset(618.0, 899.0), RenderRepaintBoundary#437d1@Offset(618.0, 899.0), RenderIgnorePointer#58293@Offset(618.0, 899.0), RenderAnimatedOpacity#6d33d@Offset(618.0, 899.0), RenderAnimatedOpacity#607d2@Offset(618.0, 899.0), _RenderColoredBox#8d99c@Offset(618.0, 899.0), RenderAnimatedOpacity#73127@Offset(618.0, 899.0), RenderIgnorePointer#2c89c@Offset(618.0, 899.0), RenderAnimatedOpacity#c4d3a@Offset(618.0, 899.0), RenderRepaintBoundary#faffb@Offset(618.0, 899.0), RenderSemanticsAnnotations#511a7@Offset(618.0, 899.0), RenderOffstage#c7a9f@Offset(618.0, 899.0), RenderSemanticsAnnotations#bcd83@Offset(618.0, 899.0), _RenderTheater#3de30@Offset(618.0, 899.0), RenderAbsorbPointer#7d352@Offset(618.0, 899.0), RenderPointerListener#ca398@Offset(618.0, 899.0), RenderCustomPaint#eb25e@Offset(618.0, 899.0), RenderSemanticsAnnotations#93024@Offset(618.0, 899.0), RenderSemanticsAnnotations#27640@Offset(618.0, 899.0), RenderTapRegionSurface#a629f@Offset(618.0, 899.0), RenderSemanticsAnnotations#e3606@Offset(618.0, 899.0), RenderSemanticsAnnotations#7ec32@Offset(618.0, 899.0), RenderSemanticsAnnotations#f3035@Offset(618.0, 899.0), HitTestEntry<HitTestTarget>#1437f(_ReusableRenderView#f14fd), HitTestEntry<HitTestTarget>#4e0f4(<AutomatedTestWidgetsFlutterBinding>))
+#0      WidgetController._getElementPoint (package:flutter_test/src/controller.dart:2081:25)
+#1      WidgetController.getCenter (package:flutter_test/src/controller.dart:1865:12)
+#2      WidgetController.tap (package:flutter_test/src/controller.dart:1045:7)
+#3      main.<anonymous closure>.tapPrimary (file:///C:/Users/pcwork/IdeaProjects/CareConnect1/test/refill_request_test.dart:59:22)
+<asynchronous suspension>
+#4      main.<anonymous closure>.<anonymous closure> (file:///C:/Users/pcwork/IdeaProjects/CareConnect1/test/refill_request_test.dart:178:7)
+<asynchronous suspension>
+#5      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#6      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1059:5)
+<asynchronous suspension>
+#7      StackZoneSpecification._registerCallback.<anonymous closure> (package:stack_trace/src/stack_zone_specification.dart:114:42)
+<asynchronous suspension>
+To silence this warning, pass "warnIfMissed: false" to "tap()".
+To make this warning fatal, set WidgetController.hitTestWarningShouldBeFatal to true.
+Warning: A call to tap() with finder "Found 1 widget with type "ElevatedButton" descending from widget with type "Stepper" (ignoring all but last): [
+  ElevatedButton-[<'refill_stepper_button'>](style: ButtonStyle#7bb3c(textStyle: WidgetStatePropertyAll(null), minimumSize: WidgetStatePropertyAll(Size(Infinity, 56.0)), mouseCursor: WidgetStateMapper<MouseCursor?>({WidgetState.disabled: null, WidgetState.any: null})), dependencies: [IconTheme, InheritedCupertinoTheme, MediaQuery, _InheritedTheme, _LocalizationsScope-[GlobalKey#9b3dd], _ScrollableScope], state: _ButtonStyleState#66a3e),
+]" derived an Offset (Offset(618.0, 899.0)) that would not hit test on the specified widget.
+Maybe the widget is actually off-screen, or another widget is obscuring it, or the widget cannot receive pointer events.
+The finder corresponds to this RenderBox: RenderSemanticsAnnotations#ac078 relayoutBoundary=up28 NEEDS-PAINT
+The hit test result at that offset is: HitTestResult(RenderPointerListener#76c01@Offset(618.0, 843.0), RenderSemanticsGestureHandler#26240@Offset(618.0, 843.0), RenderPointerListener#9134b@Offset(618.0, 843.0), _RenderScrollSemantics#addfc@Offset(618.0, 843.0), RenderClipRect#5730a@Offset(618.0, 843.0), RenderFlex#62a88@Offset(618.0, 843.0), RenderPadding#6905a@Offset(618.0, 843.0), RenderCustomMultiChildLayoutBox#b41c7@Offset(618.0, 899.0), _RenderInkFeatures#67390@Offset(618.0, 899.0), RenderPhysicalModel#595dc@Offset(618.0, 899.0), RenderSemanticsAnnotations#57bed@Offset(618.0, 899.0), RenderRepaintBoundary#437d1@Offset(618.0, 899.0), RenderIgnorePointer#58293@Offset(618.0, 899.0), RenderAnimatedOpacity#6d33d@Offset(618.0, 899.0), RenderAnimatedOpacity#607d2@Offset(618.0, 899.0), _RenderColoredBox#8d99c@Offset(618.0, 899.0), RenderAnimatedOpacity#73127@Offset(618.0, 899.0), RenderIgnorePointer#2c89c@Offset(618.0, 899.0), RenderAnimatedOpacity#c4d3a@Offset(618.0, 899.0), RenderRepaintBoundary#faffb@Offset(618.0, 899.0), RenderSemanticsAnnotations#511a7@Offset(618.0, 899.0), RenderOffstage#c7a9f@Offset(618.0, 899.0), RenderSemanticsAnnotations#bcd83@Offset(618.0, 899.0), _RenderTheater#3de30@Offset(618.0, 899.0), RenderAbsorbPointer#7d352@Offset(618.0, 899.0), RenderPointerListener#ca398@Offset(618.0, 899.0), RenderCustomPaint#eb25e@Offset(618.0, 899.0), RenderSemanticsAnnotations#93024@Offset(618.0, 899.0), RenderSemanticsAnnotations#27640@Offset(618.0, 899.0), RenderTapRegionSurface#a629f@Offset(618.0, 899.0), RenderSemanticsAnnotations#e3606@Offset(618.0, 899.0), RenderSemanticsAnnotations#7ec32@Offset(618.0, 899.0), RenderSemanticsAnnotations#f3035@Offset(618.0, 899.0), HitTestEntry<HitTestTarget>#28f85(_ReusableRenderView#f14fd), HitTestEntry<HitTestTarget>#6a5f4(<AutomatedTestWidgetsFlutterBinding>))
+#0      WidgetController._getElementPoint (package:flutter_test/src/controller.dart:2081:25)
+#1      WidgetController.getCenter (package:flutter_test/src/controller.dart:1865:12)
+#2      WidgetController.tap (package:flutter_test/src/controller.dart:1045:7)
+#3      main.<anonymous closure>.tapPrimary (file:///C:/Users/pcwork/IdeaProjects/CareConnect1/test/refill_request_test.dart:59:22)
+<asynchronous suspension>
+#4      main.<anonymous closure>.<anonymous closure> (file:///C:/Users/pcwork/IdeaProjects/CareConnect1/test/refill_request_test.dart:180:7)
+<asynchronous suspension>
+#5      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#6      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1059:5)
+<asynchronous suspension>
+#7      StackZoneSpecification._registerCallback.<anonymous closure> (package:stack_trace/src/stack_zone_specification.dart:114:42)
+<asynchronous suspension>
+To silence this warning, pass "warnIfMissed: false" to "tap()".
+To make this warning fatal, set WidgetController.hitTestWarningShouldBeFatal to true.
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following TestFailure was thrown running a test:
+Expected: exactly one matching candidate
+  Actual: _TextWidgetFinder:<Found 0 widgets with text "Please expedite": []>
+   Which: means none were found but one was expected
+When the exception was thrown, this was the stack:
+#4      main.<anonymous closure>.<anonymous closure> (file:///C:/Users/pcwork/IdeaProjects/CareConnect1/test/refill_request_test.dart:189:7)
+<asynchronous suspension>
+#5      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#6      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1059:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+This was caught by the test expectation on the following line:
+  file:///C:/Users/pcwork/IdeaProjects/CareConnect1/test/refill_request_test.dart line 189
+The test description was:
+  Notes field is editable
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:36 +80 -4: C:/Users/pcwork/IdeaProjects/CareConnect1/test/refill_request_test.dart: RefillRequestScreen Tests Notes field is editable [E]
+  Test failed. See exception logs above.
+  The test description was: Notes field is editable
+
+To run this test again: C:\Users\pcwork\Documents\FlutterSDK\flutter\bin\cache\dart-sdk\bin\dart.exe test C:/Users/pcwork/IdeaProjects/CareConnect1/test/refill_request_test.dart -p vm --plain-name "RefillRequestScreen Tests Notes field is editable"
+00:39 +83 -4: Some tests failed.
