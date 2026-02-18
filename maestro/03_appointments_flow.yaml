@@ -1,0 +1,133 @@
+# E2E Test: Appointment Viewing & Scheduling Flow
+# Critical user flow for managing medical appointments
+# Includes accessibility navigation patterns
+
+appId: com.example.care_connect
+
+---
+- launchApp
+
+# Login
+- waitForAnimationToEnd
+- tapOn:
+    text: "Username"
+- typeText: "demo"
+- tapOn:
+    text: "Password"
+- typeText: "demo123"
+- tapOn:
+    text: "Login"
+- waitForAnimationToEnd
+
+# Navigate to Appointments (via calendar or today view)
+- tapOn:
+    text: "Calendar"
+- waitForAnimationToEnd
+
+# Verify calendar loaded
+- assertVisible:
+    id: "calendar_view"
+
+# Test accessibility: Current date should be announced
+- assertVisible:
+    id: "current_date"
+
+# Select a date on calendar
+- tapOn:
+    id: "calendar_date"
+    index: 0
+
+- waitForAnimationToEnd
+
+# Verify appointments for selected date
+- assertVisible:
+    id: "appointments_for_date"
+
+# Check appointment details are shown
+- assertVisible:
+    id: "appointment_card"
+
+# Tap on an appointment
+- tapOn:
+    id: "appointment_card"
+    index: 0
+
+- waitForAnimationToEnd
+
+# Verify appointment details screen
+- assertVisible:
+    id: "appointment_detail"
+
+- assertVisible:
+    id: "appointment_title"
+
+- assertVisible:
+    id: "appointment_time"
+
+- assertVisible:
+    id: "appointment_location"
+
+- assertVisible:
+    id: "appointment_provider"
+
+# Test accessibility: Appointment information should be readable
+- assertVisible:
+    text: "Appointment Details"
+
+# Test reminder button (accessibility friendly)
+- tapOn:
+    id: "set_reminder_button"
+
+- waitForAnimationToEnd
+
+# Verify reminder set
+- assertVisible:
+    text: "Reminder set"
+
+# Test cancel appointment
+- tapOn:
+    id: "cancel_appointment_button"
+
+- waitForAnimationToEnd
+
+# Verify confirmation dialog
+- assertVisible:
+    text: "Cancel appointment?"
+
+# Confirm cancellation
+- tapOn:
+    text: "Yes"
+
+- waitForAnimationToEnd
+
+# Verify appointment was cancelled
+- assertVisible:
+    text: "Appointment cancelled"
+
+# Navigate back to calendar
+- tapOn:
+    id: "back_button"
+
+- waitForAnimationToEnd
+
+- assertVisible:
+    id: "calendar_view"
+
+---
+# Test Today View for quick access
+- tapOn:
+    text: "Today"
+
+- waitForAnimationToEnd
+
+# Verify today view is shown
+- assertVisible:
+    id: "today_view"
+
+# Check upcoming appointments section
+- assertVisible:
+    text: "Upcoming"
+
+# Verify appointments are listed
+- assertVisible:
+    id: "appointment_item"

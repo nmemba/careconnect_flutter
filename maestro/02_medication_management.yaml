@@ -1,0 +1,117 @@
+# E2E Test: Medication Management Flow
+# Critical user flow for viewing and managing medications
+# Includes accessibility features for screen reader navigation
+
+appId: com.example.care_connect
+
+---
+- launchApp
+
+# Login first
+- waitForAnimationToEnd
+- tapOn:
+    text: "Username"
+- typeText: "demo"
+- tapOn:
+    text: "Password"
+- typeText: "demo123"
+- tapOn:
+    text: "Login"
+- waitForAnimationToEnd
+
+# Navigate to Medications screen
+- tapOn:
+    text: "Medications"
+- waitForAnimationToEnd
+
+# Test accessibility: Verify medications list is visible
+- assertVisible:
+    text: "Medications"
+
+# Verify medication items are present
+- assertVisible:
+    id: "medication_list"
+
+# Test screen reader: Tap on first medication
+- tapOn:
+    id: "medication_card"
+    index: 0
+
+- waitForAnimationToEnd
+
+# Verify medication detail screen loaded
+- assertVisible:
+    id: "medication_detail_screen"
+
+# Check medication information is displayed
+- assertVisible:
+    id: "medication_name"
+
+- assertVisible:
+    id: "medication_dose"
+
+- assertVisible:
+    id: "medication_frequency"
+
+# Test accessibility: Verify refill information
+- assertVisible:
+    text: "refill"
+
+# Test navigation back using back button
+- tapOn:
+    id: "back_button"
+
+- waitForAnimationToEnd
+
+# Verify we're back at medications list
+- assertVisible:
+    text: "Medications"
+
+# Test adding new medication - tap add button
+- tapOn:
+    id: "add_medication_button"
+
+- waitForAnimationToEnd
+
+# Verify add medication form is shown
+- assertVisible:
+    id: "add_medication_form"
+
+# Fill in medication form
+- tapOn:
+    id: "med_name_field"
+
+- typeText: "Test Medication"
+
+- tapOn:
+    id: "med_dose_field"
+
+- typeText: "500mg"
+
+# Test accessibility: Dropdown selection
+- tapOn:
+    id: "frequency_dropdown"
+
+- waitForAnimationToEnd
+
+- tapOn:
+    text: "Daily"
+
+- waitForAnimationToEnd
+
+# Submit form
+- tapOn:
+    text: "Add Medication"
+
+- waitForAnimationToEnd
+
+# Verify medication was added
+- assertVisible:
+    text: "Test Medication"
+
+---
+# Cleanup: Navigate back to home
+- tapOn:
+    id: "home_button"
+
+- waitForAnimationToEnd
