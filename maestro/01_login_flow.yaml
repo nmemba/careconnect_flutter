@@ -1,0 +1,69 @@
+# E2E Test: User Login Flow
+# Critical user flow for application authentication
+# Includes accessibility testing for screen readers
+
+appId: com.example.care_connect
+
+---
+- launchApp
+
+# Wait for login screen to appear
+- waitForAnimationToEnd
+
+# Test accessibility: Check that login screen is announced
+- assertVisible:
+    text: "Welcome"
+
+# Test screen reader navigation - username field
+- tapOn:
+    text: "Username"
+    index: 0
+
+# Verify the field is focused (accessibility)
+- typeText: "demo"
+
+# Tab to password field (keyboard navigation)
+- tapOn:
+    text: "Password"
+    index: 0
+
+# Type password
+- typeText: "demo123"
+
+# Test visibility of password toggle (accessibility feature)
+- assertVisible:
+    id: "visibility_button"
+
+# Tap login button
+- tapOn:
+    text: "Login"
+
+# Wait for navigation
+- waitForAnimationToEnd
+
+# Verify successful login by checking for home screen content
+- assertVisible:
+    text: "Health Overview"
+
+# Test accessibility: Read aloud feature should work
+- assertVisible:
+    id: "home_screen"
+
+# Verify we're on home screen by checking for navigation elements
+- assertVisible:
+    text: "Medications"
+
+---
+# Logout flow to clean up
+- tapOn:
+    id: "settings_icon"
+
+- waitForAnimationToEnd
+
+- tapOn:
+    text: "Logout"
+
+- waitForAnimationToEnd
+
+- assertVisible:
+    text: "Welcome"

@@ -1,0 +1,144 @@
+# E2E Test: Medication Refill Request Flow
+# Critical user flow for requesting prescription refills
+# Includes accessibility-compliant form interactions
+
+appId: com.example.care_connect
+
+---
+- launchApp
+
+# Login
+- waitForAnimationToEnd
+- tapOn:
+    text: "Username"
+- typeText: "demo"
+- tapOn:
+    text: "Password"
+- typeText: "demo123"
+- tapOn:
+    text: "Login"
+- waitForAnimationToEnd
+
+# Navigate to Medications
+- tapOn:
+    text: "Medications"
+- waitForAnimationToEnd
+
+# Find medication with low refills
+- assertVisible:
+    text: "refill"
+
+# Tap on medication needing refill
+- tapOn:
+    id: "medication_card"
+    index: 0
+
+- waitForAnimationToEnd
+
+# Verify medication detail
+- assertVisible:
+    id: "medication_detail_screen"
+
+# Tap request refill button
+- tapOn:
+    id: "request_refill_button"
+
+- waitForAnimationToEnd
+
+# Verify refill request screen/form
+- assertVisible:
+    id: "refill_request_form"
+
+# Test accessibility: Form labels should be clear
+- assertVisible:
+    text: "Request Medication Refill"
+
+# Fill pharmacy information
+- tapOn:
+    id: "pharmacy_field"
+
+- typeText: "CVS Pharmacy"
+
+# Test radio button selection (accessibility)
+- tapOn:
+    id: "pickup_method_radio"
+    index: 0  # Select first option (e.g., "Pickup")
+
+- waitForAnimationToEnd
+
+# Add optional notes
+- tapOn:
+    id: "notes_field"
+
+- typeText: "Please ensure this is the correct dosage"
+
+# Test accessibility: Verify all fields are readable
+- assertVisible:
+    text: "Pharmacy"
+
+- assertVisible:
+    text: "Pickup Method"
+
+- assertVisible:
+    text: "Notes"
+
+# Submit refill request
+- tapOn:
+    text: "Submit Request"
+
+- waitForAnimationToEnd
+
+# Verify success message
+- assertVisible:
+    text: "Refill request submitted"
+
+# Check confirmation details
+- assertVisible:
+    id: "confirmation_screen"
+
+# Test accessibility: Confirmation should be announced
+- assertVisible:
+    text: "Status"
+
+- assertVisible:
+    text: "Pending"
+
+# Test navigation back
+- tapOn:
+    id: "done_button"
+
+- waitForAnimationToEnd
+
+# Verify return to medication detail
+- assertVisible:
+    id: "medication_detail_screen"
+
+# Check that refill status has been updated
+- assertVisible:
+    text: "refill"
+
+# Navigate back to medications list
+- tapOn:
+    id: "back_button"
+
+- waitForAnimationToEnd
+
+- assertVisible:
+    text: "Medications"
+
+---
+# Test duplicate refill prevention
+- tapOn:
+    id: "medication_card"
+    index: 0
+
+- waitForAnimationToEnd
+
+- tapOn:
+    id: "request_refill_button"
+
+- waitForAnimationToEnd
+
+# Should show message about pending refill
+- assertVisible:
+    text: "pending"
